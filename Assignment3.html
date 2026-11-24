@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3: Block and Inline Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      color: #111;
+    }
+
+    .output-box {
+      border: 1px solid #999;
+      padding: 15px;
+      margin-top: 10px;
+    }
+
+    /* Block Elements */
+    .block-item {
+      background-color: #add8e6; /* Light blue full-width background */
+      margin-bottom: 8px;
+    }
+
+    .block-item span {
+      background-color: #779ecb; /* Darker blue text highlight */
+      font-weight: bold;
+      padding: 2px 4px;
+      display: inline-block;
+    }
+
+    /* Inline Elements */
+    .inline-item {
+      background-color: #6b8e6b; /* Muted green highlight */
+      font-weight: bold;
+      padding: 2px 4px;
+      margin-right: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="output-box">
+    <!-- Block Elements -->
+    <div class="block-item"><span>Block 1</span></div>
+    <div class="block-item"><span>Block 2</span></div>
+
+    <!-- Inline Elements -->
+    <span class="inline-item">Inline 1</span>
+    <span class="inline-item">Inline 2</span>
+    <span class="inline-item">Inline 3</span>
+  </div>
+
+</body>
+</html>
