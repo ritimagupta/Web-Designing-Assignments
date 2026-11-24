@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17: Form Attributes and Input Validation</title>
+    <style>
+         .form-container {
+            border: 1px solid #888;
+            padding: 15px;
+            width: 320px;
+        }
+        input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 4px;
+            width: 220px;
+        }
+      
+     </style>
+</head>
+<body>
+      <div class="form-container">
+        <form action="#" method="post">
+            <input type="text" name="fullname" placeholder="Full name" required>
+            <input type="email" name="email" placeholder="you@college.edu" required>
+            <input type="tel" name="mobile" placeholder="10-digit mobile" pattern="[0-9]{10}" title="Please enter a 10-digit mobile number" required>
+            <input type="password" name="password" placeholder="Min 6 characters" minlength="6" required>
+            <input type="number" name="age" placeholder="Age (17+" min="17" max="100") required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
