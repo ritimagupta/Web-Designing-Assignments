@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested and Responsive Table</title>
+  <style>
+    /* Makes the wide table scroll horizontally on small screens */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #333;
+      padding: 10px 15px;
+    }
+
+    /* Styling for the inner nested table */
+    .nested-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .nested-table th, .nested-table td {
+      border: 1px solid #333;
+      padding: 6px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Responsive Wrapper -->
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Lab Batches</th>
+          <th>Faculty</th>
+          <th>Room</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Friday</td>
+          <td>
+            <!-- Nested Table inside the "Lab Batches" cell -->
+            <table class="nested-table">
+              <thead>
+                <tr>
+                  <th>Batch</th>
+                  <th>System</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A1</td>
+                  <td>PC 1-20</td>
+                </tr>
+                <tr>
+                  <td>A2</td>
+                  <td>PC 21-40</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td>Dr. Sharma</td>
+          <td>Lab 2</td>
+          <td>2-4 PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
