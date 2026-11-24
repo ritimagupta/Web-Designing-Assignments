@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessible Page</title>
+</head>
+<body>
+<div class="output-box">  
+    <a href="#main-content">Skip to main content</a>
+  <nav aria-label="Main Navigation">
+    <a href="#home">Home</a>
+    <a href="#help">Help</a>
+  </nav>
+  <main id="main-content">
+    <h1>Accessible Page</h1>
+    <img src="placeholder.jpeg" alt="Sample descriptive text for the image">
+    <button type="reset" aria-label="Clear search">X</button>
+    <form role="search">
+      <label for="search-input">Search:</label>
+      <input type="text" id="search-input" name="search" aria-label="Search site">
+    </form>
+  </main>
+</div>
+
+
+</body>
+</html>
