@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8: Hyperlinks and Images with Attributes</title>
+    <style>
+        /* Optional styling to create the card/box layout seen in the output */
+        body {
+            font-family: "Times New Roman", Times, serif;
+            margin: 20px;
+        }
+        .link-box {
+            border: 1px solid #cccccc;
+            padding: 15px;
+            width: 220px;
+            margin-bottom: 400px; /* Creates space to test jumping to bottom */
+        }
+    </style>
+</head>
+<body id="top">
+
+    <!-- Box containing the links -->
+    <div class="link-box">
+        <p>Links demo</p>
+        
+        <!-- External link opening in a new tab -->
+        <a href="https://example.com" target="_blank" title="Visit Example Website">External link</a><br>
+        
+        <!-- Internal link jumping to the bottom section -->
+        <a href="#bottom" title="Scroll down to bottom">Jump to bottom</a><br>
+        
+        <!-- Email link -->
+        <a href="mailto:someone@example.com" title="Send us an email">Email us</a><br>
+        
+        <!-- Image used as a hyperlink -->
+        <a href="https://example.com" target="_blank" title="Click the logo">
+            Logo <br>
+            <img src="logo.png" alt="Logo" width="30" height="30">
+        </a>
+    </div>
+
+    <!-- Bottom section with link to jump back to the top -->
+    <p id="bottom">
+        Bottom. <a href="#top" title="Scroll back to top">Back to top</a>
+    </p>
+
+</body>
+</html>
